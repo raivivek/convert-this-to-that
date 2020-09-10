@@ -1,0 +1,576 @@
+{
+    "wig": {
+        "bigwig": [
+            {
+                "tool": "wigToBigWig",
+                "source": "kent"
+            }
+        ],
+        "bed": [
+            {
+                "tool": "wig2bed",
+                "source": "bedops"
+            },
+            {
+                "tool": "convert2bed",
+                "source": "bedops"
+            }
+        ],
+        "starch": [
+            {
+                "tool": "wig2starch",
+                "source": "bedops"
+            }
+        ]
+    },
+    "bigbed": {
+        "bed": [
+            {
+                "tool": "bigBedToBed",
+                "source": "kent"
+            }
+        ]
+    },
+    "axt": {
+        "maf": [
+            {
+                "tool": "axtToMaf",
+                "source": "kent"
+            }
+        ],
+        "psl": [
+            {
+                "tool": "axtToPsl",
+                "source": "kent"
+            }
+        ]
+    },
+    "bam": {
+        "psl": [
+            {
+                "tool": "bamToPsl",
+                "source": "kent"
+            }
+        ],
+        "bed": [
+            {
+                "tool": "bam2bed",
+                "source": "bedops"
+            },
+            {
+                "tool": "bamToBed",
+                "source": "bedtools"
+            },
+            {
+                "tool": "convert2bed",
+                "source": "bedops"
+            }
+        ],
+        "sam": [
+            {
+                "tool": "samtools",
+                "source": "samtools"
+            },
+            {
+                "tool": "Galaxy",
+                "source": "Galaxy"
+            }
+        ]
+    },
+    "bedgraph": {
+        "bigwig": [
+            {
+                "tool": "bedGraphToBigWig",
+                "source": "kent"
+            }
+        ]
+    },
+    "bedrestrict": {
+        "positions": [
+            {
+                "tool": "bedRestrictToPositions",
+                "source": "kent"
+            }
+        ]
+    },
+    "bed": {
+        "bigbed": [
+            {
+                "tool": "bedToBigBed",
+                "source": "kent"
+            }
+        ],
+        "exons": [
+            {
+                "tool": "bedToExons",
+                "source": "kent"
+            }
+        ],
+        "genepred": [
+            {
+                "tool": "bedToGenePred",
+                "source": "kent"
+            }
+        ],
+        "psl": [
+            {
+                "tool": "bedToPsl",
+                "source": "kent"
+            }
+        ]
+    },
+    "bigmaf": {
+        "maf": [
+            {
+                "tool": "bigMafToMaf",
+                "source": "kent"
+            }
+        ]
+    },
+    "bigpsl": {
+        "psl": [
+            {
+                "tool": "bigPslToPsl",
+                "source": "kent"
+            }
+        ]
+    },
+    "bigwig": {
+        "bedgraph": [
+            {
+                "tool": "bigWigToBedGraph",
+                "source": "kent"
+            }
+        ],
+        "wig": [
+            {
+                "tool": "bigWigToWig",
+                "source": "kent"
+            }
+        ]
+    },
+    "blast": {
+        "psl": [
+            {
+                "tool": "blastToPsl",
+                "source": "kent"
+            }
+        ]
+    },
+    "blastxml": {
+        "psl": [
+            {
+                "tool": "blastXmlToPsl",
+                "source": "kent"
+            }
+        ]
+    },
+    "chain": {
+        "axt": [
+            {
+                "tool": "chainToAxt",
+                "source": "kent"
+            }
+        ],
+        "psl": [
+            {
+                "tool": "chainToPsl",
+                "source": "kent"
+            }
+        ],
+        "pslbasic": [
+            {
+                "tool": "chainToPslBasic",
+                "source": "kent"
+            }
+        ]
+    },
+    "chromgraph": {
+        "bin": [
+            {
+                "tool": "chromGraphToBin",
+                "source": "kent"
+            }
+        ]
+    },
+    "chrom": {
+        "ucsc": [
+            {
+                "tool": "chromToUcsc",
+                "source": "kent"
+            }
+        ]
+    },
+    "expmatrix": {
+        "barchartbed": [
+            {
+                "tool": "expMatrixToBarchartBed",
+                "source": "kent"
+            }
+        ]
+    },
+    "fastq": {
+        "fa": [
+            {
+                "tool": "fastqToFa",
+                "source": "kent"
+            }
+        ]
+    },
+    "fa": {
+        "fastq": [
+            {
+                "tool": "faToFastq",
+                "source": "kent"
+            }
+        ],
+        "tab": [
+            {
+                "tool": "faToTab",
+                "source": "kent"
+            }
+        ],
+        "twobit": [
+            {
+                "tool": "faToTwoBit",
+                "source": "kent"
+            }
+        ]
+    },
+    "fixstep": {
+        "bedgraph.pl": [
+            {
+                "tool": "fixStepToBedGraph.pl",
+                "source": "kent"
+            }
+        ]
+    },
+    "gap": {
+        "lift": [
+            {
+                "tool": "gapToLift",
+                "source": "kent"
+            }
+        ]
+    },
+    "genepred": {
+        "bed": [
+            {
+                "tool": "genePredToBed",
+                "source": "kent"
+            }
+        ],
+        "biggenepred": [
+            {
+                "tool": "genePredToBigGenePred",
+                "source": "kent"
+            }
+        ],
+        "fakepsl": [
+            {
+                "tool": "genePredToFakePsl",
+                "source": "kent"
+            }
+        ],
+        "gtf": [
+            {
+                "tool": "genePredToGtf",
+                "source": "kent"
+            }
+        ],
+        "mafframes": [
+            {
+                "tool": "genePredToMafFrames",
+                "source": "kent"
+            }
+        ],
+        "prot": [
+            {
+                "tool": "genePredToProt",
+                "source": "kent"
+            }
+        ]
+    },
+    "gff3": {
+        "genepred": [
+            {
+                "tool": "gff3ToGenePred",
+                "source": "kent"
+            }
+        ],
+        "psl": [
+            {
+                "tool": "gff3ToPsl",
+                "source": "kent"
+            }
+        ]
+    },
+    "gtf": {
+        "genepred": [
+            {
+                "tool": "gtfToGenePred",
+                "source": "kent"
+            }
+        ],
+        "bed": [
+            {
+                "tool": "convert2bed",
+                "source": "bedops"
+            }
+        ]
+    },
+    "hgvs": {
+        "vcf": [
+            {
+                "tool": "hgvsToVcf",
+                "source": "kent"
+            }
+        ]
+    },
+    "lav": {
+        "axt": [
+            {
+                "tool": "lavToAxt",
+                "source": "kent"
+            }
+        ],
+        "psl": [
+            {
+                "tool": "lavToPsl",
+                "source": "kent"
+            }
+        ]
+    },
+    "lines": {
+        "ra": [
+            {
+                "tool": "linesToRa",
+                "source": "kent"
+            }
+        ]
+    },
+    "maf": {
+        "axt": [
+            {
+                "tool": "mafToAxt",
+                "source": "kent"
+            }
+        ],
+        "bigmaf": [
+            {
+                "tool": "mafToBigMaf",
+                "source": "kent"
+            }
+        ],
+        "psl": [
+            {
+                "tool": "mafToPsl",
+                "source": "kent"
+            }
+        ],
+        "snpbed": [
+            {
+                "tool": "mafToSnpBed",
+                "source": "kent"
+            }
+        ]
+    },
+    "mrna": {
+        "gene": [
+            {
+                "tool": "mrnaToGene",
+                "source": "kent"
+            }
+        ]
+    },
+    "net": {
+        "axt": [
+            {
+                "tool": "netToAxt",
+                "source": "kent"
+            }
+        ],
+        "bed": [
+            {
+                "tool": "netToBed",
+                "source": "kent"
+            }
+        ]
+    },
+    "psl": {
+        "bed": [
+            {
+                "tool": "pslToBed",
+                "source": "kent"
+            },
+            {
+                "tool": "convert2bed",
+                "source": "bedops"
+            }
+        ],
+        "bigpsl": [
+            {
+                "tool": "pslToBigPsl",
+                "source": "kent"
+            }
+        ],
+        "chain": [
+            {
+                "tool": "pslToChain",
+                "source": "kent"
+            }
+        ],
+        "pslx": [
+            {
+                "tool": "pslToPslx",
+                "source": "kent"
+            }
+        ]
+    },
+    "pslx": {
+        "fa": [
+            {
+                "tool": "pslxToFa",
+                "source": "kent"
+            }
+        ]
+    },
+    "qac": {
+        "qa": [
+            {
+                "tool": "qacToQa",
+                "source": "kent"
+            }
+        ],
+        "wig": [
+            {
+                "tool": "qacToWig",
+                "source": "kent"
+            }
+        ]
+    },
+    "qa": {
+        "qac": [
+            {
+                "tool": "qaToQac",
+                "source": "kent"
+            }
+        ]
+    },
+    "ra": {
+        "lines": [
+            {
+                "tool": "raToLines",
+                "source": "kent"
+            }
+        ],
+        "tab": [
+            {
+                "tool": "raToTab",
+                "source": "kent"
+            }
+        ]
+    },
+    "rows": {
+        "cols": [
+            {
+                "tool": "rowsToCols",
+                "source": "kent"
+            }
+        ]
+    },
+    "spaced": {
+        "tab": [
+            {
+                "tool": "spacedToTab",
+                "source": "kent"
+            }
+        ]
+    },
+    "sql": {
+        "xml": [
+            {
+                "tool": "sqlToXml",
+                "source": "kent"
+            }
+        ]
+    },
+    "tick": {
+        "date": [
+            {
+                "tool": "tickToDate",
+                "source": "kent"
+            }
+        ]
+    },
+    "transmappsl": {
+        "genepred": [
+            {
+                "tool": "transMapPslToGenePred",
+                "source": "kent"
+            }
+        ]
+    },
+    "twobit": {
+        "fa": [
+            {
+                "tool": "twoBitToFa",
+                "source": "kent"
+            }
+        ]
+    },
+    "varstep": {
+        "bedgraph.pl": [
+            {
+                "tool": "varStepToBedGraph.pl",
+                "source": "kent"
+            }
+        ]
+    },
+    "xml": {
+        "sql": [
+            {
+                "tool": "xmlToSql",
+                "source": "kent"
+            }
+        ]
+    },
+    "gff": {
+        "bed": [
+            {
+                "tool": "convert2bed",
+                "source": "bedops"
+            }
+        ]
+    },
+    "gvf": {
+        "bed": [
+            {
+                "tool": "convert2bed",
+                "source": "bedops"
+            }
+        ]
+    },
+    "sam": {
+        "bed": [
+            {
+                "tool": "convert2bed",
+                "source": "bedops"
+            }
+        ],
+        "bam": [
+            {
+                "tool": "samtools",
+                "source": "samtools"
+            }
+        ]
+    },
+    "vcf": {
+        "bed": [
+            {
+                "tool": "convert2bed",
+                "source": "bedops"
+            }
+        ]
+    }
+}

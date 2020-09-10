@@ -1,0 +1,99 @@
+body {
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, San Francisco, Helvetica Neue,
+  Helvetica, Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  font-size: 21px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 70vw;
+  margin: 0 15vw;
+}
+
+.row {
+  margin: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: max(3vw, 21px);
+}
+
+.query {
+  margin-top: 25%;
+  flex-flow: row wrap;
+}
+
+.result {
+  background-color: ##f1f9e2;
+}
+
+.row p {
+  letter-spacing: 1px;
+  flex-basis: 0;
+  padding-right: 1ch;
+}
+
+span {
+  display: block;
+  flex-basis: 0;
+  padding-right: 1ch;
+}
+
+input {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: max(3.5vw, 21px);
+  display: inline-block;
+  border: none;
+  text-align: left;
+  font-style: italic;
+  margin-bottom: -5px;
+}
+
+.input-this {
+  width: 4ch;
+}
+
+.input-that {
+  width: 5ch;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tool {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+textarea:focus,
+input:focus,
+input[type]:focus,
+.uneditable-input:focus {
+  outline: 0 none;
+}
+
+.hidden {
+  display: none;
+}
+
+.sidebar {
+  background: #f0f0f0;
+  padding: 1em 1em;
+  min-height: 100%;
+}
+
+.footer {
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+

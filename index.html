@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="client.css" />
+    <title>convert this to that</title>
+    <script src="client.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row query">
+            <p>Convert</p>
+            <span> <input class="input-this" type="text" autocomplete=off placeholder="this" oninput="this.style.width = (Math.max(this.value.length, 3) + 1) + 'ch';"> </span>
+            <p> to </p>
+            <span> <input class="input-that" type="text" autocomplete=off placeholder="that." oninput="this.style.width = (Math.max(this.value.length, 4) + 1) + 'ch';"> </span>
+        </div>
+        <div class="row result"><ul class="item-list"></ul></div>
+        <div class="footer"><p>&#169; <a href="https://raivivek.in" target="_blank">raivivek.in</a></p></div>
+    </div>
+  </body>
+</html>
