@@ -46,12 +46,20 @@ $(function() {
 
     function item_to_html(tools) {
         var html = '';
-        console.log(tools);
         if (!tools || tools.length < 1) {
             $('.result').css({"transition": "background-color 0.5s ease", "background-color": "#f2e6e2"});
             return `<li> <div class="item"> <a target="_blank" class="tool">⋅ ⋅ ⋅</a> </div> </li>`;
         }
-        for (var i = 0; i < tools.length; ++i) {
+
+      const result = Array.from(new Set(tools.map(t => t.tool)))
+        .map(t => {
+          return {
+            tool: t,
+            source: tools.find(s => s.tool === t).source
+          };
+        });
+
+        for (var i = 0; i < result.length; ++i) {
             $('.result').css({"transition": "background-color 0.5s ease", "background-color": "#f1f9e2"});
             html +=
                 `<li> <div class="item"> <a target="_blank" class="tool" href=${tools[i].url}>${tools[i].tool}</a> (${tools[i].source}) </div> </li>`;
