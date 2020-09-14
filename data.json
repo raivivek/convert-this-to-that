@@ -74,6 +74,38 @@
             {
                 "tool": "Galaxy",
                 "source": "Galaxy"
+            },
+            {
+                "tool": "samtools view",
+                "source": "samtools"
+            }
+        ],
+        "fastq": [
+            {
+                "tool": "samtools fasta",
+                "source": "samtools"
+            },
+            {
+                "tool": "bamToFastq",
+                "source": "bedtools"
+            }
+        ],
+        "fasta": [
+            {
+                "tool": "samtools fasta",
+                "source": "samtools"
+            }
+        ],
+        "cram": [
+            {
+                "tool": "samtools view",
+                "source": "samtools"
+            }
+        ],
+        "bigwig": [
+            {
+                "tool": "bamCoverage",
+                "source": "deeptools"
             }
         ]
     },
@@ -562,6 +594,28 @@
             {
                 "tool": "samtools",
                 "source": "samtools"
+            },
+            {
+                "tool": "samtools view",
+                "source": "samtools"
+            }
+        ],
+        "fastq": [
+            {
+                "tool": "samtools fasta",
+                "source": "samtools"
+            }
+        ],
+        "fasta": [
+            {
+                "tool": "samtools fasta",
+                "source": "samtools"
+            }
+        ],
+        "cram": [
+            {
+                "tool": "samtools view",
+                "source": "samtools"
             }
         ]
     },
@@ -570,6 +624,50 @@
             {
                 "tool": "convert2bed",
                 "source": "bedops"
+            }
+        ],
+        "ped": [
+            {
+                "tool": "plink",
+                "source": "plink"
+            }
+        ],
+        "map": [
+            {
+                "tool": "plink",
+                "source": "plink"
+            }
+        ],
+        "bcf": [
+            {
+                "tool": "bcftools view",
+                "source": "bcftools"
+            }
+        ]
+    },
+    "cram": {
+        "fastq": [
+            {
+                "tool": "samtools fasta",
+                "source": "samtools"
+            }
+        ],
+        "fasta": [
+            {
+                "tool": "samtools fasta",
+                "source": "samtools"
+            }
+        ],
+        "bam": [
+            {
+                "tool": "samtools view",
+                "source": "samtools"
+            }
+        ],
+        "sam": [
+            {
+                "tool": "samtools view",
+                "source": "samtools"
             }
         ]
     }
