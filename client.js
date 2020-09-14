@@ -59,7 +59,6 @@ $(function() {
           };
         });
 
-      console.log(DEBUG)
       if (DEBUG) console.log(result);
 
         for (var i = 0; i < result.length; ++i) {
