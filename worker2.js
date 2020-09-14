@@ -12,11 +12,13 @@ onmessage = function(e) {
         var target = e.data.target.toLowerCase();
 
         if (src) {
-            if (data[src] && target) {
-                postMessage(data[src][target]);
+          if (data[src]) {
+            if (target) {
+              postMessage(data[src][target]);
             } else {
-                postMessage(Object.values(data[src]).flat());
+              postMessage(Object.values(data[src]).flat());
             }
+          }
         } else {
             postMessage([]);
         }

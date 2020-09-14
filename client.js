@@ -47,22 +47,22 @@ $(function() {
     function item_to_html(tools) {
         var html = '';
         if (!tools || tools.length < 1) {
-            $('.result').css({"transition": "background-color 0.5s ease", "background-color": "#f2e6e2"});
-            return `<li> <div class="item"> <a target="_blank" class="tool">⋅ ⋅ ⋅</a> </div> </li>`;
+            $('.result').css({"background-color": "unset"});
+            return `<li> <div class="item"> <a target="_blank" class="tool">no results</a> </div> </li>`;
         }
 
       const result = Array.from(new Set(tools.map(t => t.tool)))
         .map(t => {
           return {
             tool: t,
-            source: tools.find(s => s.tool === t).source
+            source: tools.find(s => s.tool === t).source,
           };
         });
 
         for (var i = 0; i < result.length; ++i) {
-            $('.result').css({"transition": "background-color 0.5s ease", "background-color": "#f1f9e2"});
+            $('.result').css({"transition": "background-color 1s linear", "background-color": "#f1f9e2"});
             html +=
-                `<li> <div class="item"> <a target="_blank" class="tool" href=${tools[i].url}>${tools[i].tool}</a> (${tools[i].source}) </div> </li>`;
+                `<li> <div class="item"> <a target="_blank" class="tool">${tools[i].tool}</a> (${tools[i].source}) </div> </li>`;
         }
         return html;
     };
@@ -76,7 +76,7 @@ $(function() {
         var target = $('.input-that').val().trim();
 
         processing = true;
-        console.log(src, target);
+        if (DEBUG) console.log(src, target);
         worker.postMessage({ type: 'query', src: src, target: target });
     };
 

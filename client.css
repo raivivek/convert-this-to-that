@@ -10,8 +10,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  width: 70vw;
-  margin: 0 15vw;
+  width: 60vw;
+  margin: 0 20vw;
 }
 
 .row {
@@ -25,10 +25,6 @@ body {
 .query {
   margin-top: 25%;
   flex-flow: row wrap;
-}
-
-.result {
-  background-color: ##f1f9e2;
 }
 
 .row p {
@@ -68,6 +64,7 @@ ul {
 
 .tool {
   font-family: 'Courier New', Courier, monospace;
+  color: blue;
 }
 
 textarea:focus,
@@ -88,12 +85,23 @@ input[type]:focus,
 }
 
 .footer {
+  padding-top: 1rem;
   text-align: center;
+  font-size: .9rem;
+}
+
+.send-note {
+  font-size: .75rem;
 }
 
 @media only screen and (max-width: 768px) {
   body {
     font-size: 14px;
+  }
+
+  .container {
+    width: 90vw;
+    margin: 0 5vw;
   }
 }
 
