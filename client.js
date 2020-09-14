@@ -59,10 +59,13 @@ $(function() {
           };
         });
 
+      console.log(DEBUG)
+      if (DEBUG) console.log(result);
+
         for (var i = 0; i < result.length; ++i) {
             $('.result').css({"transition": "background-color 1s linear", "background-color": "#f1f9e2"});
             html +=
-                `<li> <div class="item"> <a target="_blank" class="tool">${tools[i].tool}</a> (${tools[i].source}) </div> </li>`;
+                `<li> <div class="item"> <a target="_blank" class="tool">${result[i].tool}</a> (${result[i].source}) </div> </li>`;
         }
         return html;
     };
