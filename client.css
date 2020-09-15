@@ -89,7 +89,7 @@ input[type]:focus,
 }
 
 .footer {
-  padding-top: 1rem;
+  padding: 1rem;
   text-align: center;
   font-size: .9rem;
 }
