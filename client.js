@@ -48,7 +48,7 @@ $(function() {
         var html = '';
         if (!tools || tools.length < 1) {
             $('.result').css({"background-color": "unset"});
-            return `<li> <div class="item"> <a target="_blank" class="tool">no results</a> </div> </li>`;
+            return `<li> <div class="item"> <a target="_blank" class="tool">no results</a> <br> <span style="font-size: 1rem;">(hint: try a file format such as <code>fasta</code>)</span></div> </li>`;
         }
 
       const result = Array.from(new Set(tools.map(t => t.tool)))

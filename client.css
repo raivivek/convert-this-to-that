@@ -57,6 +57,10 @@ input {
   width: 5ch;
 }
 
+.item {
+  text-align: center;
+}
+
 ul {
   list-style: none;
   padding: 0;
