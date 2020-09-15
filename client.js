@@ -1,10 +1,8 @@
-var fuse;
 var nextQuery = null;
 var processing = false;
 var currentQuery = null;
 var DEBUG = false;
 var searchQuery = '';
-var pageURL = $(location).attr('href');
 
 $(function() {
     var worker = new Worker('worker2.js');

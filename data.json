@@ -28,6 +28,20 @@
             {
                 "tool": "bigBedToBed",
                 "source": "kent"
+            },
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "",
+                "snippet": ""
+            }
+        ],
+        "wiggle": [
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "",
+                "snippet": ""
             }
         ]
     },
@@ -78,6 +92,12 @@
             {
                 "tool": "samtools view",
                 "source": "samtools"
+            },
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "https://bioconvert.readthedocs.io",
+                "snippet": ""
             }
         ],
         "fastq": [
@@ -88,24 +108,82 @@
             {
                 "tool": "bamToFastq",
                 "source": "bedtools"
+            },
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "https://bioconvert.readthedocs.io",
+                "snippet": ""
             }
         ],
         "fasta": [
             {
                 "tool": "samtools fasta",
                 "source": "samtools"
+            },
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "https://bioconvert.readthedocs.io",
+                "snippet": ""
             }
         ],
         "cram": [
             {
                 "tool": "samtools view",
                 "source": "samtools"
+            },
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "https://bioconvert.readthedocs.io",
+                "snippet": ""
             }
         ],
         "bigwig": [
             {
                 "tool": "bamCoverage",
                 "source": "deeptools"
+            }
+        ],
+        "bedgraph": [
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "https://bioconvert.readthedocs.io",
+                "snippet": ""
+            }
+        ],
+        "cov": [
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "https://bioconvert.readthedocs.io",
+                "snippet": ""
+            }
+        ],
+        "json": [
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "https://bioconvert.readthedocs.io",
+                "snippet": ""
+            }
+        ],
+        "tsv": [
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "https://bioconvert.readthedocs.io",
+                "snippet": ""
+            }
+        ],
+        "wiggle": [
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "https://bioconvert.readthedocs.io",
+                "snippet": ""
             }
         ]
     },
@@ -149,6 +227,14 @@
                 "tool": "bedToPsl",
                 "source": "kent"
             }
+        ],
+        "wiggle": [
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "",
+                "snippet": ""
+            }
         ]
     },
     "bigmaf": {
@@ -172,12 +258,26 @@
             {
                 "tool": "bigWigToBedGraph",
                 "source": "kent"
+            },
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "",
+                "snippet": ""
             }
         ],
         "wig": [
             {
                 "tool": "bigWigToWig",
                 "source": "kent"
+            }
+        ],
+        "wiggle": [
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "",
+                "snippet": ""
             }
         ]
     },
@@ -334,6 +434,14 @@
             {
                 "tool": "gff3ToPsl",
                 "source": "kent"
+            }
+        ],
+        "gff2": [
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "",
+                "snippet": ""
             }
         ]
     },
@@ -549,6 +657,14 @@
                 "tool": "twoBitToFa",
                 "source": "kent"
             }
+        ],
+        "fasta": [
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "",
+                "snippet": ""
+            }
         ]
     },
     "varstep": {
@@ -624,6 +740,12 @@
             {
                 "tool": "convert2bed",
                 "source": "bedops"
+            },
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "",
+                "snippet": ""
             }
         ],
         "ped": [
@@ -642,6 +764,20 @@
             {
                 "tool": "bcftools view",
                 "source": "bcftools"
+            },
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "",
+                "snippet": ""
+            }
+        ],
+        "wiggle": [
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "",
+                "snippet": ""
             }
         ]
     },
@@ -650,24 +786,288 @@
             {
                 "tool": "samtools fasta",
                 "source": "samtools"
+            },
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "",
+                "snippet": ""
             }
         ],
         "fasta": [
             {
                 "tool": "samtools fasta",
                 "source": "samtools"
+            },
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "",
+                "snippet": ""
             }
         ],
         "bam": [
             {
                 "tool": "samtools view",
                 "source": "samtools"
+            },
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "",
+                "snippet": ""
             }
         ],
         "sam": [
             {
                 "tool": "samtools view",
                 "source": "samtools"
+            },
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "",
+                "snippet": ""
+            }
+        ]
+    },
+    "ped": {
+        "vcf": [
+            {
+                "tool": "plink",
+                "source": "plink",
+                "url": "",
+                "snippet": ""
+            }
+        ]
+    },
+    "abi": {
+        "fasta": [
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "https://bioconvert.readthedocs.io",
+                "snippet": ""
+            }
+        ],
+        "fastq": [
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "https://bioconvert.readthedocs.io",
+                "snippet": ""
+            }
+        ],
+        "qual": [
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "https://bioconvert.readthedocs.io",
+                "snippet": ""
+            }
+        ]
+    },
+    "bcf": {
+        "vcf": [
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "https://bioconvert.readthedocs.io",
+                "snippet": ""
+            }
+        ],
+        "wiggle": [
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "https://bioconvert.readthedocs.io",
+                "snippet": ""
+            }
+        ]
+    },
+    "bplink": {
+        "plink": [
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "",
+                "snippet": ""
+            }
+        ]
+    },
+    "clustal": {
+        "fasta": [
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "",
+                "snippet": ""
+            }
+        ],
+        "phylip": [
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "",
+                "snippet": ""
+            }
+        ],
+        "stockholm": [
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "",
+                "snippet": ""
+            }
+        ]
+    },
+    "csv": {
+        "tsv": [
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "",
+                "snippet": ""
+            }
+        ],
+        "xls": [
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "",
+                "snippet": ""
+            }
+        ]
+    },
+    "embl": {
+        "fasta": [
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "",
+                "snippet": ""
+            }
+        ],
+        "genbank": [
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "",
+                "snippet": ""
+            }
+        ]
+    },
+    "fasta": {
+        "faa": [
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "",
+                "snippet": ""
+            }
+        ],
+        "fastq": [
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "",
+                "snippet": ""
+            }
+        ],
+        "nexus": [
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "",
+                "snippet": ""
+            }
+        ],
+        "genbank": [
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "",
+                "snippet": ""
+            }
+        ],
+        "phylip": [
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "",
+                "snippet": ""
+            }
+        ],
+        "twobit": [
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "",
+                "snippet": ""
+            }
+        ],
+        "clustal": [
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "",
+                "snippet": ""
+            }
+        ]
+    },
+    "genbank": {
+        "embl": [
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "",
+                "snippet": ""
+            }
+        ],
+        "fasta": [
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "",
+                "snippet": ""
+            }
+        ],
+        "gff3": [
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "",
+                "snippet": ""
+            }
+        ]
+    },
+    "gff2": {
+        "gff3": [
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "",
+                "snippet": ""
+            }
+        ]
+    },
+    "tsv": {
+        "csv": [
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "",
+                "snippet": ""
+            }
+        ]
+    },
+    "yaml": {
+        "json": [
+            {
+                "tool": "bioconvert",
+                "source": "bioconvert",
+                "url": "",
+                "snippet": ""
             }
         ]
     }
